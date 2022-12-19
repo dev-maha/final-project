@@ -4,6 +4,52 @@
     font-family: 'Baloo Da 2', cursive;
 
 }
+.head-s {
+    background-color: #3ca4d3;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 11px;
+    padding: 5px 0px 5px;
+}
+.language {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 10%;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    height: 50px;
+    border-bottom: 1px solid black;
+    padding: 9px 20px 10px;
+    background-color: white;
+    z-index: 3;
+}
+.box-1 {
+    flex-basis: 22%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-3 {
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 22%;
+    align-items: center;
+
+}
+
+.search {
+    display: flex;
+    flex-basis: 85%;
+}
 
 body{
     background-color:blanchedalmond;
