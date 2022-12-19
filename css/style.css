@@ -1,5 +1,8 @@
-* {
-    margin: 0px auto;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Da 2', cursive;
+
 }
 
 .head-s {
@@ -9,7 +12,6 @@
     align-items: center;
     justify-content: space-between;
     font-size: 11px;
-    font-family: 'Roboto', sans-serif;
     padding: 5px 0px 5px;
 }
 
@@ -44,7 +46,6 @@
     justify-content: space-around;
     flex-basis: 22%;
     align-items: center;
-    font-family: 'Roboto', sans-serif;
 
 }
 
