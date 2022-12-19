@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Da 2', cursive;
+
+}
+
+body{
+    background-color:blanchedalmond;
+}
+.texts {
+    position: absolute;
+    top:70px;
+    right: 250px;
+    color: rgb(232, 1, 1);
+        
+}
+
+.empty {
+    height: 2px;
+    width: 90px;
+    background-color: red;
+}
+
+.santa {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.what{
+    font-size: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+    color:black;
+}
+
+.what:hover {
+    color:red;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.karta{
+    background-color: rgba(255, 255, 255, 0.648);
+    position: relative;
+    height: 600px;
+    margin-bottom: 50px;
+}
+
+.pre-btn,
+.nxt-btn{
+    border:none;
+    position: absolute;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 9;
+}
+
+.pre-btn{
+    left:0;
+    transform: rotate(180deg);
+}
+
+.nxt-btn{
+    right:0;
+}
+
+input{
+    width: 200px;
+    font-size: 20px;
+    background-color:rgba(228, 3, 3, 0.69);
+    color: white;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+input:hover {
+    background-color: white;
+    color:red;
+    border: 2px solid red;
+  }
+
+.self{
+    color:black;
+}
+
+.self:hover {
+    color:red;
+}
