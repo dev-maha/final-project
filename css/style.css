@@ -3,7 +3,16 @@
   padding: 0;
   font-family: 'Spartan', sans-serif;
 }
-#header{
+
+body {
+  background-color: #cccccc;
+}
+
+a {
+  text-decoration: none;
+}
+
+#header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -33,7 +42,7 @@
   transition: 0.3s ease;
 }
 #navbar li a:hover,
-#navbar li a.active{
+#navbar li a.active {
   color: rgba(255, 0, 0, 0.549);
 }
 #navbar li a.active::after,
@@ -339,4 +348,19 @@ footer .install .row button {
   font-size: 24px;
   padding-left: 20px;
   }
+}
+
+.single-pro-details h2 {
+  margin-top: 50px;
+  border: 2px solid grey;
+  margin-right: 100px;
+}
+
+.cb {
+  display: flex;
+  align-items: center;
+}
+
+.cb input {
+  width: 10px;
 }

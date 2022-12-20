@@ -2,16 +2,28 @@ let carts = document.querySelectorAll('.add-cart');
 
 let products = [
     {
-        name: 'Grey Tshirt',
-        tag: 'greytshirt',
+        photo:"box1.jpg",
+        name: 'Cosmetic',
         price: 15,
-        inCart: 0
+        inCart: 1
     },
     {
-        name: 'Grey Hoodie',
-        tag: 'greyhoodie',
-        price: 20,
-        inCart: 0
+        photo:"box2.jpg",
+        name: 'Gift box',
+        price: 30,
+        inCart: 1
+    },
+    {
+        photo:"box3.jpg",
+        name:'Red pack',
+        price: 25,
+        inCart: 1
+    }
+    {
+        photo:"box4.jpg",
+        name:'Mystery box',
+        price: 17,
+        inCart: 1
     }
 ];
 
@@ -76,5 +88,12 @@ function totalCost(product) {
         localStorage.setItem("totalCost", product.price);
     }
 }
+function displayCart(){
+    let cartItems = localStorage.getItem("productsInCart");
+    cartItems = JSON.parseInt(cartItems);
+    let productContainer = document.querySelector(".products");
+}
+console.log(cartItems);
 
 onLoadCartNumbers();
+displayCart();
