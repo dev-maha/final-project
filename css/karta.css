@@ -88,7 +88,7 @@
 }
 
 .karta{
-    background-color: blanchedalmond;
+    background-color: rgb(254, 242, 224);
     position: relative;
     height: 600px;
     margin-bottom: 50px;
@@ -122,6 +122,7 @@ input{
     color: white;
     cursor: pointer;
     border: 2px solid white;
+    padding: 5px 10px;
 }
 
 input:hover {
@@ -137,6 +138,15 @@ input:hover {
 .self:hover {
     color:red;
 }
+
+body{
+    width: 100%;
+  }
+
+  .section-p1{
+    padding: 40px 80px;
+  }
+
 
 footer{
     display: flex;
