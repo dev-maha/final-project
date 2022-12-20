@@ -4,9 +4,6 @@
   font-family: 'Spartan', sans-serif;
 }
 
-body {
-  background-color: #cccccc;
-}
 
 a {
   text-decoration: none;
@@ -168,13 +165,13 @@ footer .install .row button {
 
 #hr {
   width: 100%;
-  height: 40vh;
+  height: 100%;
   background-size: cover;
   display: flex;
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  padding: 14px;
+  
 }
 
 #pagination {
