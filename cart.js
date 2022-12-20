@@ -94,7 +94,6 @@ function displayCart(){
     let productContainer = document.querySelector(".products");
 }
 console.log(cartItems);
-if(cartItems && productContainer)
 
 onLoadCartNumbers();
 displayCart();

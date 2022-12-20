@@ -349,7 +349,6 @@ footer .install .row img {
 .cb {
   display: flex;
   align-items: center;
-  justify-content: start;
 }
 
 .cb input {
