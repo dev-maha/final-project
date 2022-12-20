@@ -10,6 +10,9 @@
   	unset($_SESSION['username']);
   	header("location: login.php");
   }
+if (!isset($_SESSION['username']) || empty($_SESSION['username']){
+  header("Location: index.html");
+}
 ?>
 <!DOCTYPE html>
 <html>
