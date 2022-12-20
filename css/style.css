@@ -1,10 +1,15 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Spartan', sans-serif;
 }
-  #header{
+
+a {
+  text-decoration: none;
+}
+
+#header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,29 +21,34 @@
   top: 0;
   left: 0;
 }
-#navbar{
+
+#navbar {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#navbar li{
+
+#navbar li {
   list-style: none;
   padding: 0 20px;
   position: relative;
 }
-#navbar li a{
+
+#navbar li a {
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
   color: black;
   transition: 0.3s ease;
 }
+
 #navbar li a:hover,
-#navbar li a.active{
+#navbar li a.active {
   color: cornflowerblue;
 }
+
 #navbar li a.active::after,
-#navbar li a:hover::after{
+#navbar li a:hover::after {
   content: "";
   width: 30%;
   height: 2px;
@@ -47,26 +57,34 @@
   bottom: -4px;
   left: 20px;
 }
-.section-p1{
+
+.section-p1 {
   padding: 40px 80px;
+  display: flex;
+  justify-content: space-between;
 }
-.section-m1{
+
+.section-m1 {
   margin: 40px 0;
   font-size: large;
 }
-body{
+
+body {
   width: 100%;
 }
-#product1 .pro-container{
+
+#product1 .pro-container {
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
   flex-wrap: wrap;
 }
-#product1{
+
+#product1 {
   text-align: center;
 }
-#product1 .pro{
+
+#product1 .pro {
   width: 23%;
   min-width: 250px;
   padding: 10px 12px;
@@ -77,50 +95,181 @@ body{
   margin: 15px 0;
   transition: 0.2s ease;
 }
-#product1 .pro:hover{
+
+#product1 .pro:hover {
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
 }
-#product1 .pro img{
+
+#product1 .pro img {
   width: 100%;
   border-radius: 20px;
 }
-#product1 .pro .des{
+
+#product1 .pro .des {
   text-align: center;
   padding: 10px 0;
 }
-footer{
+
+/*#product1 .pro-container .pro .cart {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: white;
+  font-weight: 500;
+  color: green;
+  border: 1px;
+}*/
+
+footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-footer .col{
+
+footer .col {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 20px;
 }
-footer .logo1{
+
+footer .logo1 {
   margin-bottom: 30px;
 }
-footer h4{
+
+footer h4 {
   font-size: 14px;
   padding-bottom: 20px;
 
 }
-footer p{
-  font-size: 13px;
-  margin:0 0 8px 0
-  }
 
-  footer a{
-    font-size: 13px;
-    text-decoration: none;
-    color: #222;
-    margin-bottom: 10px;
-    
+footer p {
+  font-size: 13px;
+  margin: 0 0 8px 0
+}
+
+footer a {
+  font-size: 13px;
+  text-decoration: none;
+  color: #222;
+  margin-bottom: 10px;
+
+}
+
+footer .install .row img {
+  border: 1px solid #088178;
+  border-radius: 6px;
+}
+
+/*maha*/
+
+#hr {
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 14px;
+}
+
+#pagination {
+  text-align: center;
+}
+
+#pagination a {
+  text-decoration: none;
+  background-color: #088178;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: white;
+  font-weight: 600;
+}
+
+#pagination a i {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#prodetails {
+  display: flex;
+  margin-top: 20px;
+
+}
+
+#prodetails .single-pro-image {
+  width: 40%;
+  margin-right: 50px;
+}
+
+.small-img-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-img-col {
+  flex-basis: 24%;
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+}
+
+#prodetails .single-pro-details {
+  width: 50%;
+  padding-top: 30px;
+}
+
+#prodetails .single-pro-details h4 {
+  padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details h2 {
+  font-size: 26px;
+}
+
+#prodetails .single-pro-details select {
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+#prodetails .single-pro-details input {
+  width: 50px;
+  height: 47px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+#prodetails .single-pro-details input:focus {
+  outline: none;
+}
+
+#prodetails .single-pro-details button {
+  background: #088178;
+  color: white;
+}
+
+#f {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+}
+
+@media (max-width:799) {
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    height: 100vh;
+    width: 300px;
   }
-  footer .install .row img{
-    border: 1px solid #088178;
-    border-radius: 6px;
-  }
-  
+}
