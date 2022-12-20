@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 50px;
-  background: gainsboro;
+  background: rgb(254, 242, 224);
   box-shadow: 0 5px 15px black;
   z-index: 999;
   position: sticky;
@@ -35,14 +35,14 @@
 }
 #navbar li a:hover,
 #navbar li a.active{
-  color: cornflowerblue;
+  color: rgba(255, 0, 0, 0.549);
 }
 #navbar li a.active::after,
 #navbar li a:hover::after{
   content: "";
   width: 30%;
   height: 2px;
-  background: cornflowerblue;
+  background: rgba(255, 0, 0, 0.549);
   position: absolute;
   bottom: -4px;
   left: 20px;
