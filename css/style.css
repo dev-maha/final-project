@@ -162,7 +162,7 @@ footer .install .row img {
   border-radius: 6px;
 }
 
-/*maha*/
+/*-*/
 
 #hr {
   width: 100%;
@@ -262,6 +262,64 @@ footer .install .row img {
   justify-content: center;
   align-items: center;
   padding: 80px;
+}
+
+.products-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+  margin-top: 50px;
+}
+
+.products-container {
+  max-width: 650px;
+  justify-content: space-around;
+  padding-bottom: 100px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.products-header {
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 4px solid black;
+  margin: 0 auto;
+}
+
+.products-title {
+  width: 45%;
+}
+
+.price {
+  width: 15%;
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  width: 30%;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+
+.total {
+  width: 10%;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+
+.product {
+  width: 45%;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
 }
 
 @media (max-width:799) {
