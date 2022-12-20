@@ -50,13 +50,10 @@ if (isset($_POST['reg_user'])) {
 
   	$query = "INSERT INTO users (username, email, password, age, gender) 
   			  VALUES('$username', '$email', '$password', '$age', '$gender')";
-  	$result = mysqli_query($db, $query);
-    if($result){
-  	system("index.html");
-    exit();
-    } else{
-
-    }
+  	mysqli_query($db, $query);
+  	$_SESSION['username'] = $username;
+  	$_SESSION['success'] = "You are now logged in";
+  	header('location: index.php');
   }
 }
 
@@ -76,10 +73,11 @@ if (isset($_POST['login_user'])) {
   	$password = md5($password);
   	$query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
   	$results = mysqli_query($db, $query);
-  	if($results){
-  	system("index.html");
-    exit();
-    }else {
+  	if (mysqli_num_rows($results) == 1) {
+  	  $_SESSION['username'] = $username;
+  	  $_SESSION['success'] = "You are now logged in";
+  	  header('location: ../index.html');
+  	}else {
   		array_push($errors, "Wrong username/password combination");
   	}
   }
