@@ -24,9 +24,13 @@
         <li><a href="karta.html">Location</a></li>
         <li><a href="http://localhost/final-project/data/login.php"><img src="img/login.png" class="cartimg" alt=""
               width="37px"></a></li>
-        <li><a href="cart.html"><img src="img/cart.png" class="cartimg" alt="" width="37px"></a></li>
+        <li><img src="img/play.png" class="playimg" id="imgClickAndChange" alt="" width="50px"
+            onclick="play()">
+        </li>
       </ul>
     </div>
+
+    <audio id="audio" src="mp3/Wham-Last-Christmas-Lyrics.mp3"></audio>
   </section>
   <div class="content">
     <div class="background"><img src="img/banner-1.jpg" alt="" width="100%" height="600px">
@@ -168,6 +172,31 @@
       $(document).snowfall({ image: "img/snow4.png", minSize: 10, maxSize: 20 });
     });
   </script>
+
+  <script>
+    let isPlaying = false;
+
+    function play() {
+      var audio = document.getElementById("audio");
+      
+      if (isPlaying) {
+        $('#imgClickAndChange').attr('src', 'img/play.png');
+        isPlaying = false;
+        audio.pause();
+      } else {
+        $('#imgClickAndChange').attr('src', 'img/pause.png');
+        isPlaying = true;
+        audio.play();
+      }
+    }
+
+    function changeImage(image) {
+      image.src = 'img/pause.png';
+    }
+
+  </script>
+
+</html>
 </body>
 
 </html>
