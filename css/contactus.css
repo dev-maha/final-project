@@ -51,10 +51,59 @@
     width: 100%;
   }
 
+p{
+    color: black;
+}
+
+p:hover{
+    color: red;
+}
+
+input {
+    display: inline-block;
+    width: 1000px;
+    height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-image: url(https://instapik.ru/wp-content/uploads/2021/03/temno-krasnyy-fon-dlya-fotoshopa-abstraktnye-polosy.jpg);
+    background-size: 400px;
+    opacity: 0.95;
+    border: none;
+    border-radius: 15px;
+    margin:30px 20px;
+    box-shadow: 0 9px #999;
+  }
+  
+  input:hover {
+    background-image: url(https://img.freepik.com/free-vector/paper-style-white-monochrome-background_52683-66443.jpg?w=2000);
+    background-size: 400px;
+    opacity: 0.95;
+    color: #d83434;
+}
+  
+  input:active {
+    background-color: #d83434;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
   .section-p1{
     padding: 40px 80px;
   }
 
+  form{
+    display: flex;
+    justify-content: center;
+  }
+
+  .center{
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
 
 footer{
     display: flex;
