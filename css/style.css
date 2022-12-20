@@ -5,6 +5,10 @@
   font-family: 'Spartan', sans-serif;
 }
 
+body {
+  background-color: #cccccc;
+}
+
 a {
   text-decoration: none;
 }
@@ -44,7 +48,7 @@ a {
 
 #navbar li a:hover,
 #navbar li a.active {
-  color: cornflowerblue;
+  color: rgba(255, 0, 0, 0.549);
 }
 
 #navbar li a.active::after,
@@ -334,4 +338,20 @@ footer .install .row img {
     height: 100vh;
     width: 300px;
   }
+}
+
+.single-pro-details h2 {
+  margin-top: 50px;
+  border: 2px solid grey;
+  margin-right: 100px;
+}
+
+.cb {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.cb input {
+  width: 10px;
 }
